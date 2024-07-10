@@ -182,25 +182,85 @@ a {
 }
 .albums {
     width: 25%;
-    background-color: orange;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
 }
+
+.main-img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.p-title {
+    font-size: 0.80rem;
+    margin-left: 1rem;
+}
+
+.p-text {
+    font-size: 0.80rem;
+    margin-left: 1rem;
+}
+.left-icon {
+    height: 1.5rem;
+    margin-left: 0.75rem;
+}
+
 .players {
     width: 50%;
-    background-color: pink;
-    height: 100%;
 }
 .controls {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    justify-content: end;
     width: 25%;
-    background-color: green;
-    height: 100%;
+}
+
+.right-controller {
+    margin-right: 0.50rem;
+    margin-top: 1rem;
 }
 .player-controls {
     display: flex;
-    justify-content:center;  
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .player-control-icon {
     height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
 }
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+} 
